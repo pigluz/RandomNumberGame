@@ -39,6 +39,9 @@ while (true)
                 {
                     Console.WriteLine("You entered a number that is higher than the generated number.");
                     GeneratedNumberInfo(randomNumber);
+                    Thread.Sleep(1000);
+                    Console.WriteLine("You won!\n");
+                    break;
 
                 }
                 //If it's lower:

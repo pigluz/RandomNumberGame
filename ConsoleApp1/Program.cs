@@ -38,7 +38,7 @@ while (true)
                 if (userNumber > randomNumber)
                 {
                     Console.WriteLine("You entered a number that is higher than the generated number.");
-                    GeneratedNumberInfo(randomNumber);
+                    Console.WriteLine($"The generated number was {randomNumber}.");
                     Thread.Sleep(1000);
                     Console.WriteLine("You won!\n");
                     break;
@@ -48,7 +48,7 @@ while (true)
                 else
                 {
                     Console.WriteLine("You entered a number that is lower than the generated number.");
-                    GeneratedNumberInfo(randomNumber);
+                    Console.WriteLine($"The generated number was {randomNumber}.");
                 }
     
                 Console.Write("\nDo you want to play again? ");
@@ -71,10 +71,4 @@ while (true)
     {
         throw new ("You entered not an int.");
     }
-}
-
-
-void GeneratedNumberInfo(int randomNumber)
-{
-    Console.WriteLine($"The generated number was {randomNumber}.");
 }
